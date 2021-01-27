@@ -1,3 +1,11 @@
+/**
+ * A API FoxNews Foi criada por Adryan Alencar
+ * utilizando Next.JS e mantida na Vercel.
+ * 
+ * Author: Adryan Alencar.
+ * 
+ */
+
 const api_url = "https://news.sevenfox.com.br/api";
 
 
