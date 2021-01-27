@@ -1,5 +1,5 @@
-#Projeto pessoal de AW1 - IFSP 2021
+# Projeto pessoal de AW1 - IFSP 2021
 
-##Notas:
+## Notas:
 
-###1 - A localização é solicitada para obter os dados de clima e tempo do local
+### 1 - A localização é solicitada para obter os dados de clima e tempo do local
