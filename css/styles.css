@@ -1,0 +1,247 @@
+html,
+body {
+    margin: 0px;
+    background-image: url('../img/background.jpg');
+}
+
+@font-face {
+    font-family: uol-font;
+    src: url(./font/uol-text-regular.otf);
+}
+
+header {
+    background-color: #fff;
+    color: #ff8f0a;
+    font-family: 'uol-font';
+}
+
+header .logo {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
+header .logo .photo {
+    margin: auto;
+    display: block;
+    width: 30%;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+}
+
+.nav-bar {
+    background-color: #f4f4f4;
+    padding: 1px;
+}
+
+.nav-bar .nav-content {
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.nav-content .nav-item {
+    float: left;
+    border-left-style: solid;
+    border-left-width: 1px;
+    padding: 7px 30px;
+    border-color: #ff8f0a;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.nav-content .nav-item:hover {
+    background-color: #f0efef;
+}
+
+.nav-content .nav-item:first-child {
+    border-left: none !important;
+}
+
+.container-news .article-body a {
+    color: black;
+}
+
+.article-content {
+    max-width: 80%;
+    margin: auto;
+}
+
+.article-footer {
+    max-width: 80%;
+    margin: auto;
+}
+
+.article-footer div {
+    overflow: auto;
+    float: right;
+}
+
+.container-news {
+    max-width: 100%;
+    overflow: auto;
+    margin: auto;
+    margin-top: auto;
+    margin-top: 50px;
+}
+
+.container-news * p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-news .article-header {
+    margin-bottom: 25px;
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.container-news .article-header img {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    display: block;
+    z-index: 0;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.desactive .logo {
+    display: none;
+}
+
+.active .logo {
+    display: inline;
+}
+
+.weather-display {
+    position: fixed;
+    top: 100px;
+    padding: 10px;
+    margin: 12px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px #c6c4c4;
+    border-style: dotted;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-primary a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.stars-rating li img {
+    width: 25px;
+}
+
+.stars-rating li {
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+    background-color: rgba(255, 0, 0, 0);
+    float: left;
+}
+
+.stars-rating {
+    list-style-type: none;
+    display: inline;
+}
+
+.star-rating-title {
+    display: block;
+    float: none !important;
+}
+
+.star-rating-item {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .weather-display {
+        top: auto;
+        bottom: 100px;
+    }
+    section {
+        max-width: 100%;
+        background-color: white;
+        padding: 0px!important;
+        width: 100%;
+    }
+    .stars-rating {
+        margin: auto;
+        display: flex;
+        padding: 0px;
+        overflow: auto;
+        justify-content: center;
+    }
+    .article-footer div p {
+        display: block;
+        text-align: center !important;
+    }
+    .article-footer button {
+        display: block;
+        margin: auto;
+    }
+    .article-footer div {
+        float: none !important;
+    }
+    header .logo .photo {
+        width: 80%;
+    }
+}
